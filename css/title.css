@@ -1,0 +1,98 @@
+div#title {
+   background-image: url(../img/bg_hero.jpg);
+}
+
+div#title .wrap {
+  
+}
+div#title .wrap ul {
+  
+}
+div#title .wrap ul li {
+  
+}
+div#title .wrap ul li a {
+  
+}
+div#title .wrap ul li a img{
+  padding-top: 110px;
+  border-radius: 191px;
+  width: 88%;
+  margin-left: 44px;
+ }
+
+div#title .wrap ul li a{
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 95%;
+
+}
+div#title .wrap ul li:not(:first-child) a{
+  animation-name: topSd;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  opacity: 0;
+}
+
+div#title .wrap ul li:nth-child(1) a::before{
+ content:"";
+ background-image: url(../img/bg_hero_frame.png);
+ width: 1620px;
+ height: 903px;
+ top: 16px;
+ left: 20px;
+ display: block;
+ position: absolute;
+ background-size: 90%;
+ background-repeat: no-repeat;
+ }
+
+div#title .wrap ul li:nth-child(2) a {
+  background-image: url(../img/title_menu1.png);
+  width: 329px;
+  height: 255px;
+  top: 120px;
+  right: 250px;
+}
+@keyframes topSd{
+  0%{
+ transform:translateX(100%);
+  }
+  100%{
+ transform:translateX(0%);
+    opacity: 1;
+    
+      
+  }
+}
+div#title .wrap ul li:nth-child(3) a{
+  background-image: url(../img/title_menu2.png);
+  width: 329px;
+  height: 255px;
+  top: 370px;
+  right: 250px;
+  animation-delay: 0.3s;
+}
+div#title .wrap ul li:nth-child(4) a{
+  background-image: url(../img/title_menu3.png);
+  display: block;
+  width: 329px;
+  height: 255px;
+  position: absolute;
+  top: 584px;
+  right: 250px;
+  animation-delay: 0.6s;
+}
+
+div#title .wrap ul li:nth-child(4) a::after{
+  content:"";
+  display: block;
+  width: 56px;
+  height: 56px;
+  background-image: url(../img/btn_hero_banner.png);
+  position: absolute;
+  bottom: 62px;
+  right: 311px;
+}
