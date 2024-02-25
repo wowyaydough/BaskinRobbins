@@ -8,28 +8,27 @@ section#footer .wrap {
 }
 section#footer .wrap ul.top {
   padding: 40px 0 20px 0;
+  justify-content: space-between;
 }
 section#footer .wrap ul.top li {
   
+  /*! width: 100%; */
+  padding-right: 10px;
 }
 section#footer .wrap ul.top li a {
   color: white;
   font-size: 12px;
-  padding: 0 58px 0 0;
+  padding-right: 0;
 }
 section#footer .wrap ul.top li:nth-child(10) a{
 padding-right:0;  
 }
 
-section#footer .wrap ul.top li a::after{
-  content:"";
-  border-bottom: 1px solid #333230;
-  display: block;
-  padding-top: 20px;
-}
 section#footer .wrap .middle {
   
   position: relative;
+  border-top: 1px solid;
+  padding-top: 40px;
 }
 section#footer .wrap .middle::after {
   content:"";
@@ -41,7 +40,7 @@ section#footer .wrap .middle::after {
   bottom: -18px;
 }
 section#footer .wrap .middle ul.add {
-  
+  width: calc(100% / 4);
 }
 section#footer .wrap .middle ul.add li {
   
@@ -60,19 +59,21 @@ section#footer .wrap .middle ul.add li p {
 section#footer .wrap .middle ul.add li p.rights {
 }
 section#footer .wrap .middle ul.map {
-  padding-left: 200px;
+  width: calc((100% / 4) * 3);
 }
 section#footer .wrap .middle ul.map>li {
-  padding-right: 60px;
+  width: calc(100% / 5);
 }
 section#footer .wrap .middle ul.map > li:last-child{
   padding-right:0;  
 }
 section#footer .wrap .middle ul.map li ul.mapdetail {
   
+  width: 100%;
 }
 section#footer .wrap .middle ul.map li ul.mapdetail li {
   
+  width: 100%;
 }
 section#footer .wrap .middle ul.map li ul.mapdetail li a {
   color: white;

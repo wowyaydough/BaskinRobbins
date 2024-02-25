@@ -4,6 +4,10 @@ div#title {
 
 div#title .wrap {
   
+  display: flex;
+  flex-direction: column;
+  /*! align-items: center; */
+  justify-content: center;
 }
 div#title .wrap ul {
   
@@ -16,8 +20,8 @@ div#title .wrap ul li a {
 }
 div#title .wrap ul li a img{
   padding-top: 110px;
-  border-radius: 191px;
-  width: 88%;
+  border-radius: 198px;
+  width: 98vw;
   margin-left: 44px;
  }
 
@@ -34,6 +38,7 @@ div#title .wrap ul li:not(:first-child) a{
   animation-duration: 0.5s;
   animation-timing-function: ease-in;
   opacity: 0;
+  right: -16px;
 }
 
 div#title .wrap ul li:nth-child(1) a::before{
@@ -54,7 +59,6 @@ div#title .wrap ul li:nth-child(2) a {
   width: 329px;
   height: 255px;
   top: 120px;
-  right: 250px;
 }
 @keyframes topSd{
   0%{
@@ -72,7 +76,6 @@ div#title .wrap ul li:nth-child(3) a{
   width: 329px;
   height: 255px;
   top: 370px;
-  right: 250px;
   animation-delay: 0.3s;
 }
 div#title .wrap ul li:nth-child(4) a{
@@ -82,7 +85,6 @@ div#title .wrap ul li:nth-child(4) a{
   height: 255px;
   position: absolute;
   top: 584px;
-  right: 250px;
   animation-delay: 0.6s;
 }
 
@@ -94,5 +96,5 @@ div#title .wrap ul li:nth-child(4) a::after{
   background-image: url(../img/btn_hero_banner.png);
   position: absolute;
   bottom: 62px;
-  right: 311px;
+  right: 304px;
 }
