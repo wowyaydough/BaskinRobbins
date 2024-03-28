@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPF7-BR</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+
+    <!-- //구글폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- 구글폰트// -->
+    <!-- 프리텐다드 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <!--  -->
+    <!-- https://ionic.io/ionicons/v1 -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+    <!--  -->
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/benefit.css">
+    <link rel="stylesheet" href="css/new.css">
+    <link rel="stylesheet" href="css/play.css">
+    <link rel="stylesheet" href="css/better.css">
+    <link rel="stylesheet" href="css/advantage.css">
+    <link rel="stylesheet" href="css/aside.css">
+    <link rel="stylesheet" href="css/aside_bottom.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- java -->
+    <script src="JS/jquery-3.7.1.min.js"></script>   
+       <!-- slick -->
+       <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+       <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+       <!-- slick -->
+       <script>
+         $(document).ready(function(){
+            $('.promotion_slide').slick({
+                infinite: true,
+                slidesToShow: 5,
+                slidesToScroll: 5,
+                dots: true,
+                arrows: false
+            });
+        });
+       </script> 
+
+       <script>
+        $(document).ready(function(){
+            $("aside.bottom ul li:nth-child(2) a").click(function(){
+                $("section#new div.page1").addClass("hide");
+                $("section#new div.page2").removeClass("hide");
+                $("aside.bottom ul li:nth-child(1)").removeClass("current").addClass("disabled");
+                $("aside.bottom ul li:nth-child(2)").addClass("current").removeClass("disabled");
+                $("aside.bottom ul li:nth-child(1) a").addClass("");
+                return false;
+            });
+            $("aside.bottom ul li:nth-child(1) a").click(function(){
+                $("section#new div.page2").addClass("hide");
+                $("section#new div.page1").removeClass("hide");
+                $("aside.bottom ul li:nth-child(2)").removeClass("current").addClass("disabled");
+                $("aside.bottom ul li:nth-child(1)").addClass("current").removeClass("disabled");
+                $("aside.bottom ul li:nth-child(2) a").addClass("");
+                return false;
+            });
+            
+        });
+       </script>
+</head>
+<body>
+    <!-- 상단영역 -->
+    <header>
+        <div class="wrap flex between">           
+            <ul class="gnb flex">
+                <h1>BR</h1>
+                <li><a class="bold font13" href="">Menu</a></li>
+                <li><a class="bold font13" href="">BR Play</a></li>
+                <li><a class="bold font13" href="">BR Story</a></li>
+                <li><a class="bold font13" href="">Delivery/Store</a></li>
+            </ul>
+            <ul class="log flex">
+                <li><a class="search" href="">search</a></li>
+                <li><a class="log_in" href="">log_in</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- 타이틀영역 -->
+    <div id="title" class="vh100 paddingB50">
+        <div class="wrap">
+            <ul class="flex column">
+                <li><a href=""><img src="img/title.jpg" alt=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 메인영역 -->
+<main>
+    <!-- benefit -->
+    <section id="benefit" class="vh100 flex column paddingT50 paddingB50">
+        <div class="wrap flex column">
+            <h2>Promotion</h2>
+            <p class="top">베라의 다양한 혜택과 이벤트를 만나보세요</p>
+            <ul class="flex ben promotion_slide">
+                <li>
+                    <a href="" class="benefit_slide1">
+                    </a>
+                    <div>
+                        <p class="period">상시운영</p>
+                        <p class="benefit">도라에몽의 하얀모찌 단팥죽, 배달&픽업<span class="block"></span>
+                            가능 매장 안내</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="benefit_slide2">
+                    </a>
+                    <div>
+                        <p class="period">2023.09.04~소진 시 까지</p>
+                        <p class="benefit">아이스크림 스쿱퍼, 해피앱 스캔 시 3천원<span class="block"></span>
+                            OFF!</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="benefit_slide3">  
+                    </a>
+                    <div>
+                        <p class="period">2023.07.03~소진 시 까지</p>
+                        <p class="benefit">모슈 텀블러 or 머그 MD 구매 시 베라 3종 쿠폰<span class="block"></span>
+                            증정</p>
+                    </div>    
+                </li>
+                <li>
+                    <a href="" class="benefit_slide4">
+                    </a>
+                    <div>
+                        <p class="period">2023.07.05~소진 시 까지</p>
+                        <p class="benefit">아이스크림 보냉 컨테이너 매장판매 시작!</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="benefit_slide5">
+                    </a>
+                    <div>
+                        <p class="period">상시운영</p>
+                        <p class="benefit">SKT 우주패스, 배스킨라빈스 구독 시 7천원<span class="block"></span>
+                            OFF!
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="benefit_slide6">
+                    </a>
+                    <div>
+                        <p class="period">상시 운영</p>
+                        <p class="benefit">워크샵 by 배스킨라빈스 그랜드 오픈</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="benefit_slide7">
+                    </a>
+                    <div>
+                        <p class="period">2024-02-13~소진 시 까지</p>
+                        <p class="benefit">파인트 이상 구매 시, 크로우캐년 머그커플세트 26,800원!</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="benefit_slide8">
+                    </a>
+                    <div>
+                        <p class="period">2024.02.08~소진 시 까지</p>
+                        <p class="benefit">쿼터 이상 구매 시, 크로우캐년 시리얼 볼 & 스푼 세트 19,900원!</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="benefit_slide9">
+                    </a>
+                    <div>
+                        <p class="period">2023.09.04~소진 시 까지</p>
+                        <p class="benefit">아이스크림 스큽퍼, 해피앱 스캔 시 3천원 OFF!</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="benefit_slide10">
+                    </a>
+                    <div>
+                        <p class="period">2023.07.03~소진 시 까지</p>
+                        <p class="benefit">모슈 텀블러 머그 MD 구매 시 배라 3종 쿠폰 증정</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+                    <!-- 하단 슬라이드아이콘 -->
+                    <aside class="top">
+                        <ul>
+                            <li><a href="">page1</a></li>
+                            <li><a href="">page2</a></li>
+                        </ul>
+                    </aside>
+    </section>
+
+        <!-- New -->
+    <section id="new" class="vh100 paddingT50 paddingB50">
+        <div class="wrap page1 flex column">
+            <hgroup>
+                <h2 class="h2">New Item</h2>
+                <h3 class="p">새로 나온 배라의 신제품을 소개합니다</h3>
+            </hgroup>
+            <ul class="prod">
+                <li>
+                    <a href="">
+                        <h3></h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <h3>고디바 바닐라<span class="block"></span>
+                            초코카라멜</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <h3>고디바 트리플 초콜릿<span class="block"></span>
+                            케이크</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <h3>고디바 아이스 마카롱<span class="block"></span>
+                            초콜릿</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <h3>고디바 아이스 모찌<span class="block"></span>
+                            초콜릿&카라멜</h3>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="wrap page2 flex column hide">
+            <hgroup>
+                <h2 class="h2">New Item</h2>
+                <h3 class="p">새로 나온 배라의 신제품을 소개합니다</h3>
+            </hgroup>
+            <ul class="prod">
+                <li>
+                    <a href="">
+                        <h3></h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <h3>파워퍼프걸! 베리 슈퍼<span class="block"></span>
+                            파워</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <h3>파워퍼프걸 하트<span class="block"></span>
+                            스틱바 딸기</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <h3>스트로베리 요거트<span class="block"></span>
+                            블라스트</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <h3>맥심 스틱바<span class="block"></span>
+                            슈프림골드</h3>
+                    </a>
+                </li>
+            </ul>
+        </div>
+            <!-- 하단 슬라이드아이콘 -->
+    <aside class="bottom">
+        <ul>
+            <li class="current"><a href="">page1</a></li>
+            <li class="disabled"><a href="">page2</a></li>
+        </ul>
+    </aside>
+  </section>
+
+        <!-- play -->
+  <section id="play" class="vh100">
+    <div class="wrap flex column">
+        <hgroup class="flex column">
+            <h2 class="font50 bold">BR Play</h2>
+            <h3>배라와 함께한 당신의 다양한 의견을 듣습니다.</h3>
+        </hgroup>
+        <ul class="flex">
+            <li>
+                <a href="">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </div>
+  </section>
+
+        <!-- better -->
+  <section id="better" class="vh100">
+    <div class="wrap flex column">
+        <hgroup class="flex column">
+            <h2 class="font50">Be Better</h2>
+            <h3>배라가 사회와 함께 하는 방법, 가치 있는 같이</h3>
+        </hgroup>
+        <ul class="flex">
+            <li>
+                <a href="" class="flex">
+                    <span>
+                        <h3 class="font22 bold">핑크팜 캠페인</h3>
+                        <p class="font15">지역 농가 상생 프로젝트</p>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="" class="flex">
+                    <span>
+                        <h3 class="font22 bold">핑크드림 캠페인</h3>
+                        <p class="font15">청소년 자립 지원 프로젝트</p>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="" class="flex">
+                    <span>
+                        <h3 class="font22 bold">핑크링크 캠페인</h3>
+                        <p class="font15">중소기업 콜라보 프로젝트</p>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+  </section>
+
+        <!-- advantage -->
+  <section id="advantage" class="font50 bold">
+    <div class="wrap flex column">
+        <hgroup>
+            <h2 class="font50 bold">BR Benefit</h2>
+            <h3 class="p">배라와 함께 다양한 혜택을 즐기세요</h3>
+        </hgroup>
+        <ul class="flex top">
+            <li><a href=""><img src="img/benefit1.png" alt=""></a></li>
+            <li><a href=""><img src="img/benefit2.png" alt=""></a></li>
+            <li><a href=""><img src="img/benefit3.png" alt=""></a></li>
+            <li><a href=""><img src="img/benefit4.jpg" alt=""></a></li>
+            <li><a href=""><img src="img/benefit5.png" alt=""></a></li>
+        </ul>
+        <ul class="flex bottom">
+            <li>
+                <span class="flex">
+                    <h6 class="font40 bold">Store</h6>
+                    <p class="p">내 주변 가까운<span class="block"></span>배스킨라빈스 매장을 찾아보세요</p>
+                </span>
+                <a href="">
+                    
+                </a>
+            </li>
+            <li>
+                <span class="flex">
+                    <h6 class="font40 bold">BR Way</h6>
+                    <p class="p">오랜 시간 우리 곁에 함께한<span class="block"></span>배스킨라빈스의 이야기</p>
+                </span>
+                <a href="" >
+                  
+                </a>
+            </li>
+        </ul>
+    </div>
+  </section>
+
+    <!-- 하단영역 -->
+    <section id="footer">
+        <div class="wrap">
+            <ul class="top flex">
+                <li><a href="">신규 직영점 입점제의</a></li>
+                <li><a href="">점포개설문의</a></li>
+                <li><a href="">채용문의</a></li>
+                <li><a href="">윤리신고센터</a></li>
+                <li><a href="">해피포인트카드 이용약관</a></li>
+                <li><a href="">배스킨라빈스 리워드 이용약관</a></li>
+                <li><a href="">개인정보처리방침</a></li>
+                <li><a href="">영상정보처리기기운영관리방침</a></li>
+                <li><a href="">안전보건 경영방침</a></li>
+                <li><a href="">거래희망회사 사전등록</a></li>
+            </ul>
+
+            <div class="middle flex">
+                <ul class="add flex column">
+                    <li>
+                        <img src="img/h_logo_2.png" alt="배스킨라빈스_로고">
+                    </li>
+                    <li>
+                        <p>사업자 등록번호 : 303-81-09535
+                         <span class="block"></span>
+                        비알코리아(주) 대표이사 도세호
+                        <span class="block"></span>
+                    서울특별시 서초구 남부순환로 2620(양재동 11-149번지)
+                    <span class="block"></span>
+                    TEL : 080-555-3131
+                    <span class="block"></span>
+                    개인정보관리책임자 : 조성희/상무보
+                        </p>
+                    </li>
+                    <li>
+                        <p class="rights">Copyright @ 2023 BRKOREA Company. All Rights Reserved</p>
+                    </li>
+                </ul>
+                <ul class="map flex">
+                    <li>
+                        <ul class="mapdetail">
+                            <li><a href="">Menu</a></li>
+                            <li><a href="">이달의 맛</a></li>
+                            <li><a href="">아이스크림</a></li>
+                            <li><a href="">블록팩/레디팩</a></li>
+                            <li><a href="">아이스크림 케이크</a></li>
+                            <li><a href="">디저트</a></li>
+                            <li><a href="">음료</a></li>
+                            <li><a href="">커피</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="mapdetail">
+                            <li><a href="">BR Play</a></li>
+                            <li><a href="">이벤트</a></li>
+                            <li><a href="">배라광장</a></li>
+                            <li><a href="">BR레시피</a></li>
+                            <li><a href="">마이플레이버리스트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="mapdetail">
+                            <li><a href="">BR Story</a></li>
+                            <li><a href="">브랜드 스토리</a></li>
+                            <li><a href="">이달의 맛 히스토리</a></li>
+                            <li><a href="">Be Better</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="mapdetail">
+                            <li><a href="">Delivery/Store</a></li>
+                            <li><a href="">매장 찾기</a></li>
+                            <li><a href="">100flavor 플래그십스토어</a></li>
+                            <li><a href="">Flow 매장</a></li>
+                            <li><a href="">점포개설문의</a></li>
+                            <li><a href="">배달주문</a></li>
+                            <li><a href="">단체주문</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="mapdetail">
+                            <li><a href="">Information Center</a></li>
+                            <li><a href="">고객센터</a></li>
+                            <li><a href="">소비자중심경영(CCM)</a></li>
+                            <li><a href="">칭찬점포</a></li>
+                            <li><a href="">공지사항</a></li>
+                            <li><a href="">보도자료</a></li>
+                        </ul>
+                    </li>
+                </ul>
+               </div>
+
+                <div class="bottom flex between">
+                    <ul class="logo flex">
+                        <li>
+                            <a href="">
+                                <img src="img/btn_happy_point.png" alt="happy_point">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/btn_happy_market.png" alt="happy_market">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/btn_spc_story.png" alt="spc">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/btn_ksa.png" alt="ksa">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/btn_ccm.png" alt="ccm">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="sns flex">
+                        <li><a href="">instagram</a></li>
+                        <li><a href="">youtube</a></li>
+                        <li><a href="">facebook</a></li>
+                        <li><a href="">br</a></li>
+                        <select name="" id="">
+                            <option value="">FAMILY SITE</option>
+                            <option value="">배스킨스쿨</option>
+                            <option value="">SPC그룹사이트</option>
+                            <option value="">BR코리아</option>
+                            <option value="">해피포인트카드</option>
+                            <option value="">파스쿠찌</option>
+                            <option value="">삼립</option>
+                            <option value="">파리바게트</option>
+                            <option value="">던킨도너츠</option>
+                        </select>
+                    </ul>
+                </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
