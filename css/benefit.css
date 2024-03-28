@@ -1,0 +1,215 @@
+section#benefit {
+
+  position: relative;
+  justify-content: center;
+}
+section#benefit .wrap {
+
+  align-items: center;
+  padding-bottom: 140px;
+  box-sizing: border-box;
+}
+section#benefit .wrap h2 {
+
+  font-size: 50px;
+  color: #ff5484;
+  font-weight: bold;
+  line-height: 80px;
+}
+section#benefit .wrap p.top {
+
+  font-size: 14px;
+  color: #909090;
+  margin-bottom: 80px;
+}
+section#benefit .wrap ul {
+
+  width: 100%;
+}
+section#benefit .wrap> ul li{
+  background-position: bottom center;
+}
+section#benefit .wrap>ul li .benefit_slide1 {
+  
+}
+section#benefit .wrap ul li {
+  display: block;
+  height: 410px;
+  width: 295px;
+  border-radius: 140px 140px 0 0;
+  margin: 0 20px;
+}
+/* section#benefit .wrap ul li:nth-child(n+6){
+  display: none;
+} */
+section#benefit .wrap ul li a{
+  background-position: center 15px;
+  height: 310px;
+  display: block;
+  border-radius: 150px 150px 0 0;
+  position: relative;
+}
+section#benefit .wrap ul li div{
+  position: absolute;
+  width: 100%;
+  height: 97px;
+  z-index: 999;
+  bottom: -23px;
+}
+section#benefit .wrap ul li p.benefit{
+  padding-top: 23px;
+  color: #747474;
+  font-size: 15px;
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  }
+section#benefit .wrap ul li p.period{
+  color:#d9bb97;
+  font-size: 13px;
+  border-bottom: 1px solid;
+  padding-bottom: 18px;
+  width: 260px;
+}
+setion#benefit .wrap ul li p.period::before{
+  content:"";
+  border-bottom:1px solid #ccc;
+  display: block;
+}
+
+
+section#benefit .wrap ul li a.benefit_slide1 {
+  background-image: url(../img/prod1.jpg);
+}
+section#benefit .wrap ul li a.benefit_slide2 {
+  background-image: url(../img/prod2.png);
+}
+section#benefit .wrap ul li a.benefit_slide3 {
+  background-image: url(../img/prod3.png);
+}
+section#benefit .wrap ul li a.benefit_slide4 {
+  background-image: url(../img/prod4.jpg);
+}
+section#benefit .wrap ul li a.benefit_slide5 {
+  background-image: url(../img/prod5.png);
+}
+section#benefit .wrap ul li a.benefit_slide6 {
+  background-image: url(../img/prod6.png);
+}
+section#benefit .wrap ul li a.benefit_slide7 {
+  background-image: url(../img/prod7.jpg);
+}
+section#benefit .wrap ul li a.benefit_slide8 {
+  background-image: url(../img/prod8.jpg);
+}
+section#benefit .wrap ul li a.benefit_slide9 {
+  background-image: url(../img/prod9.png);
+} 
+section#benefit .wrap ul li a.benefit_slide10 {
+  background-image: url(../img/prod10.png);
+}
+
+section#benefit .wrap ul li a p.period {
+font-size: 12px;
+color:#dcc0a0;
+border-radius: 150px 150px 0 0;
+}
+
+/* section#benefit .wrap ul li a p.period::after{
+  content:"";
+  width: 100%;
+  height: 2px;
+  display: block;
+  background-color: #f0e7d9;
+  margin: 20px 0;
+}  */
+section#benefit .wrap ul li:nth-child(1) a p.period {
+
+}
+section#benefit .wrap ul li:nth-child(1) a p.benefit {
+}
+section#benefit .wrap ul li a p.benefit{
+  font-size: 14px;
+  color: #666666;
+}
+
+section#benefit .wrap ul li:nth-child(2) a {
+
+}
+section#benefit .wrap ul li:nth-child(2) a p.period {
+
+}
+section#benefit .wrap ul li:nth-child(2) a p.benefit {
+
+}
+
+section#benefit .wrap ul li:nth-child(3) a {
+
+}
+section#benefit .wrap ul li:nth-child(3) a p.period {
+
+}
+section#benefit .wrap ul li:nth-child(3) a p.benefit {
+
+}
+
+section#benefit .wrap ul li:nth-child(4) a {
+
+}
+section#benefit .wrap ul li:nth-child(4) a p.period {
+
+}
+section#benefit .wrap ul li:nth-child(4) a p.benefit {
+
+}
+
+section#benefit .wrap ul li:nth-child(5) a {
+
+}
+section#benefit .wrap ul li:nth-child(5) a p.period {
+
+}
+section#benefit .wrap ul li:nth-child(5) a p.benefit {
+
+}
+
+
+.slick-dots li.slick-active button:before{
+  top: 791px;
+  left: 644px;
+  opacity: 1 !important;
+  background-image: url(../img/icon_bullet_active.png);
+  display: block;
+  width: 27px;
+  height: 32px;
+  background-repeat: no-repeat;
+  position: absolute;
+  font-size: 0;
+}
+.slick-dots li buttons#lick-slide-control01:before{
+  
+}
+ul.slick-dots li:nth-child(1) button::before{
+  top: 216%;
+  left: 237%;
+  font-size: 0;
+  display: block;
+  /*! background-color: #f3ccd5; */
+  background-image: url(../img/icon_bullet_active.png);
+  width: 27px;
+  height: 32px;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+ul.slick-dots li:nth-child(2) button::before{
+  top: 116%;
+  left: 253%;
+background-image: url(../img/icon_bullet_active.png);
+  display: block;
+  width: 27px;
+  height: 32px;
+  background-repeat: no-repeat;
+  position: absolute;
+  content: "";
+}
+
