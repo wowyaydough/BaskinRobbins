@@ -1,0 +1,46 @@
+aside.bottom{
+  position: absolute;
+  bottom: 40px;
+  right: calc(50% - 88px);
+}
+
+aside.bottom ul{
+  display: flex;
+}
+
+aside.bottom ul li{
+  padding: 0 15px;
+}
+aside.bottom ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+
+aside.bottom ul li:nth-child(1){
+  background-image: url(../img/icon_bullet_active.png);
+  display: block;
+  width: 27px;
+  height: 32px;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 25px;
+  bottom: -18px;
+}
+aside.bottom ul li a{
+  font-size: 0;
+  width: 14px;
+  height: 14px;
+  display: block;
+  border-radius: 50%;
+  background-color: #f3ccd5;
+}
+
+aside.bottom ul li:nth-child(1) a{
+  display: none;
+}
+.currentB{
+  background-color: blue;
+}
+
+.currentW{
+  background-color: white; 
+}
